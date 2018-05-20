@@ -29,7 +29,7 @@
 		> pip install Werkzeug
 		> …
 
-	    **If you cloned the repository** [ST_PythonFlaskDockerHeroku] (https://github.com/DiegoSilva776/ST_PythonFlaskDockerHeroku), simply run:
+	    **If you cloned the repository** [ST_PythonFlaskDockerHeroku](https://github.com/DiegoSilva776/ST_PythonFlaskDockerHeroku), simply run:
 		> pip3 install --no-cache-dir -r requirements.txt
 
 ### 2 - Create a Dockerfile that encapsulates your project, like so:
@@ -40,7 +40,7 @@
 		> 	my_project/
 
     2.1 - Create this Dockerfile:
-	    **If you cloned the repository** [ST_PythonFlaskDockerHeroku] (https://github.com/DiegoSilva776/ST_PythonFlaskDockerHeroku), skip this step
+	    **If you cloned the repository** [ST_PythonFlaskDockerHeroku](https://github.com/DiegoSilva776/ST_PythonFlaskDockerHeroku), skip this step
 
         ```
         #Grab the latest alpine image
@@ -75,7 +75,7 @@
     2.2 - Replace my_project with the name of the directory of your web app
 
 ### 3 - Build a simple Flask application inside the my_project/ directory:
-        **If you cloned the repository** [ST_PythonFlaskDockerHeroku] (https://github.com/DiegoSilva776/ST_PythonFlaskDockerHeroku), skip this step
+        **If you cloned the repository** [ST_PythonFlaskDockerHeroku](https://github.com/DiegoSilva776/ST_PythonFlaskDockerHeroku), skip this step
  
 	wsgi.py
 		> from app import app as application
@@ -175,7 +175,7 @@
 		>	my_project
 
 	7.2 - Create an empty Git repository:
-        **If you cloned the repository** [ST_PythonFlaskDockerHeroku] (https://github.com/DiegoSilva776/ST_PythonFlaskDockerHeroku), skip this step
+        **If you cloned the repository** [ST_PythonFlaskDockerHeroku](https://github.com/DiegoSilva776/ST_PythonFlaskDockerHeroku), skip this step
 
 	    >   git init
 
@@ -192,7 +192,7 @@
 	7.6 - Make sure the heroku repository was added to the list of remotes:
 	    > git remote -v
 
-    7.7 - **If you cloned the repository** [ST_PythonFlaskDockerHeroku] (https://github.com/DiegoSilva776/ST_PythonFlaskDockerHeroku), create a new repository at GitHub, Bitbucket or somewhere else to push you code and them:
+    7.7 - **If you cloned the repository** [ST_PythonFlaskDockerHeroku](https://github.com/DiegoSilva776/ST_PythonFlaskDockerHeroku), create a new repository at GitHub, Bitbucket or somewhere else to push you code and them:
         > git remote remove origin
         > git remote add origin ‘https://path_to_your_new_repo’
         > git remote -v, see if the origin is your new repository
