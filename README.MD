@@ -214,7 +214,7 @@ $	Dockerfile
 $	my_project/
 ```
 
-7.2 - Ensure you have installed Heroku CLI:
+7.2 - Ensure you have an account on Heroku and that you have installed Heroku CLI:
 [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
 
 7.3 - Create an empty Git repository:
