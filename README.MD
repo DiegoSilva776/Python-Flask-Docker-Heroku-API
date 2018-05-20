@@ -1,6 +1,6 @@
-#Dockerizing a Python web application created with Flask  and deploying it to a container on Heroku
+# Dockerizing a Python web application created with Flask  and deploying it to a container on Heroku
 
-###1 - Install virtualenv to isolate the dependencies of your project:
+### 1 - Install virtualenv to isolate the dependencies of your project:
 
 [Info about virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/#virtualenvironments-ref)
 
@@ -32,7 +32,7 @@
 	    **If you cloned the repository** [ST_PythonFlaskDockerHeroku] (https://github.com/DiegoSilva776/ST_PythonFlaskDockerHeroku), simply run:
 		> pip3 install --no-cache-dir -r requirements.txt
 
-###2 - Create a Dockerfile that encapsulates your project, like so:
+### 2 - Create a Dockerfile that encapsulates your project, like so:
 
 	For the following project structure:
 		> root/
@@ -74,7 +74,7 @@
 
     2.2 - Replace my_project with the name of the directory of your web app
 
-###3 - Build a simple Flask application inside the my_project/ directory:
+### 3 - Build a simple Flask application inside the my_project/ directory:
         **If you cloned the repository** [ST_PythonFlaskDockerHeroku] (https://github.com/DiegoSilva776/ST_PythonFlaskDockerHeroku), skip this step
  
 	wsgi.py
@@ -135,7 +135,7 @@
 		    app.run(host='0.0.0.0')
         ```
 
-###4 - Freeze the list of packages:versions used by your project:
+### 4 - Freeze the list of packages:versions used by your project:
 
 	4.1 - Make sure the virtualenv is active:
 	    > cd my_project
@@ -144,7 +144,7 @@
 	4.2 - Freeze the dependencies
 	    > pip freeze > requirements.txt
 
-###5 - Test your project locally:
+### 5 - Test your project locally:
 
 	5.1 - Inside your project directory ‘my_project/’, export the app to start the server:
 	    > export FLASK_APP=app.py
@@ -156,7 +156,7 @@
 
 	5.4 - Once the app has passed the local tests, build a Docker image and test it on a container
 	
-###6 - Encapsulate your app by building a Docker image:
+### 6 - Encapsulate your app by building a Docker image:
 	
 	6.1 - Navigate to the root directory of your project ‘root/’:
 	    > cd ..
@@ -167,7 +167,7 @@
 
 	6.3 - Verify the log while the image is getting built and see if everything is working flawlessly
 
-###7 - If your image was built correctly locally, it means it’s probably going to work on a Heroku container, so just create a new Heroku project and associate it with your project:
+### 7 - If your image was built correctly locally, it means it’s probably going to work on a Heroku container, so just create a new Heroku project and associate it with your project:
 
 	7.1 - Ensure that you are in the root directory of your project, the directory with the Dockerfile:
 		> root/
@@ -197,7 +197,7 @@
         > git remote add origin ‘https://path_to_your_new_repo’
         > git remote -v, see if the origin is your new repository
 
-###8 - Deploy your project to a Docker container on Heroku:
+### 8 - Deploy your project to a Docker container on Heroku:
 
 	8.1 — Log in to Container Registry:
 	    > heroku container:login
@@ -208,4 +208,4 @@
 	8.3 - Verify if your project was deployed correctly:
 	    > heroku open
 
-###9 - Repeat the development -> testings -> deployment cycle as new features are inserted into your project
+### 9 - Repeat the development -> testings -> deployment cycle as new features are inserted into your project
