@@ -89,7 +89,7 @@ USER myuser
 CMD gunicorn --bind 0.0.0.0:$PORT wsgi 
 ```
 
-2.2 - Replace my_project with the name of the directory of your web app
+2.2 - On the Dockerfile replace `my_project` with the name of the directory of your web app.
 
 #### 3 - Build a simple Flask application inside the my_project/ directory:
 
@@ -214,35 +214,38 @@ $	Dockerfile
 $	my_project/
 ```
 
-7.2 - Create an empty Git repository:
+7.2 - Ensure you have installed Heroku CLI:
+[Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
+
+7.3 - Create an empty Git repository:
 
 **If you cloned the repository** [ST_PythonFlaskDockerHeroku](https://github.com/DiegoSilva776/ST_PythonFlaskDockerHeroku), skip this step
 ```
 $   git init
 ```
 
-7.3 - Create a new heroku project:
+7.4 - Create a new heroku project:
 ```
 $ heroku apps:create my-project
 ```
 
-7.4 - Collect the information outputted on the terminal:
+7.5 - Collect the information outputted on the terminal:
 ```
 $ Creating ⬢ my-project... done
 $ https://my-project.herokuapp.com/ | https://git.heroku.com/my-project.git
 ```
 
-7.5 - Add the Git repository created for the heroku project into the list of remotes of your current git repository:
+7.6 - Add the Git repository created for the heroku project into the list of remotes of your current git repository:
 ```
 $ git remote add heroku https://git.heroku.com/my-project.git
 ```
 
-7.6 - Make sure the heroku repository was added to the list of remotes:
+7.7 - Make sure the heroku repository was added to the list of remotes:
 ```
 $ git remote -v
 ```
 
-7.7 - **If you cloned the repository** [ST_PythonFlaskDockerHeroku](https://github.com/DiegoSilva776/ST_PythonFlaskDockerHeroku), create a new repository on GitHub, Bitbucket or somewhere else to push you code to and them:
+7.8 - **If you cloned the repository** [ST_PythonFlaskDockerHeroku](https://github.com/DiegoSilva776/ST_PythonFlaskDockerHeroku), create a new repository on GitHub, Bitbucket or somewhere else to push you code to and them:
 ```
 $ git remote remove origin
 $ git remote add origin ‘https://path_to_your_new_repo’
